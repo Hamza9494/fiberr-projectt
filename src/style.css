@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+}
+.show {
+  height: auto;
+}
+.nav-toggle {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  margin: 0.45rem 2rem;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+}
+li {
+  list-style-type: none;
+}
+.icone {
+  width: 25px;
+}
+.container {
+  width: 95vw;
+  max-width: 1162px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+}
+.first-view {
+  min-height: 100vh;
+  background-color: #fff8ea;
+}
+.hero {
+  margin-top: -1.5rem;
+}
+.hero {
+  padding: 0 1.25rem;
+}
+.hero-info {
+  margin-top: 0.5rem;
+}
+.hero-info h1 {
+  width: 75%;
+}
+.hero-info p {
+  font-size: 20px;
+  margin: 1rem 0;
+  width: 85%;
+  line-height: 25px;
+}
+.btn {
+  display: block;
+  background-color: #5800ff;
+  color: white;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+}
+.hero-info a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #5800ff;
+  text-decoration: underline;
+}
+
+.feature {
+  display: flex;
+}
+.feature p {
+  text-transform: capitalize;
+  margin: 0.5rem;
+}
