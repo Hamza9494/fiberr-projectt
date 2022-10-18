@@ -12,6 +12,7 @@ img {
   width: 100%;
   height: auto;
 }
+/* header */
 .nav-links {
   height: 0;
   overflow: hidden;
@@ -48,10 +49,12 @@ li {
   justify-content: space-between;
   padding: 1.25rem 2rem;
 }
+
 .first-view {
   min-height: 100vh;
   background-color: #fff8ea;
 }
+/* hero */
 .hero {
   margin-top: -1.5rem;
 }
@@ -104,4 +107,33 @@ li {
 .feature p {
   text-transform: capitalize;
   margin: 0.5rem;
+}
+
+/* features */
+.options {
+  width: 90%;
+  margin: 5rem auto;
+}
+.options > h3 {
+  color: #5800ff;
+  margin: 1rem 0;
+}
+.options h1 {
+  width: 80%;
+}
+.option {
+  margin: 2rem 0;
+}
+.feature-icone {
+  display: block;
+  width: 45px;
+  margin: 0.75rem 0;
+}
+.feature-title {
+  margin: 0.75rem 0;
+}
+.feature-description {
+  width: 90%;
+  line-height: 1.5rem;
+  font-size: 18px;
 }
