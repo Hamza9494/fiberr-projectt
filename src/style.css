@@ -17,7 +17,7 @@ img {
   height: 0;
   overflow: hidden;
 }
-.show {
+.visible {
   height: auto;
 }
 .nav-toggle {
@@ -136,4 +136,72 @@ li {
   width: 90%;
   line-height: 1.5rem;
   font-size: 18px;
+}
+/* show */
+.show {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #5800ff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 3rem 2rem 0 2rem;
+}
+.show h1 {
+  width: 70%;
+  margin-bottom: 1.75rem;
+}
+.show p {
+  width: 90%;
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.85px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.show .btn.show-btn {
+  background-color: aliceblue;
+  color: #5800ff;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+.show-image {
+  display: block;
+  height: auto;
+  height: 350px;
+  object-fit: cover;
+}
+/* testimonails */
+.testimonials {
+  width: 80%;
+  margin: 0 auto;
+}
+.user {
+  width: 50px;
+}
+.testimonial {
+  border: 1px solid #d3d3d3;
+  padding: 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+.profile {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.user-text {
+  margin-bottom: 1.25rem;
+  font-size: 18px;
+  line-height: 1.6rem;
+  font-weight: ;
+}
+.btn.user-btn {
+  background-color: transparent;
+  color: #5800ff;
+  border: 1px solid #d3d3d3;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
 }
