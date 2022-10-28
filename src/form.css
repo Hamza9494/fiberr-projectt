@@ -13,11 +13,12 @@ body {
   min-height: 100vh;
 }
 .container {
-  width: 500px;
+  width: 450px;
   padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 7%);
   border-radius: 5px;
   max-width: 100%;
+  margin: 1rem auto;
 }
 .header {
   padding: 10px 40px;
@@ -62,8 +63,9 @@ body {
 }
 .form-contorl.success .fa-solid.fa-circle-check {
   color: #2ecc71;
-  visibility: hidden;
+  visibility: visible;
   font-size: 20px;
+  top: 60px;
 }
 
 .form-contorl.error input {
@@ -145,4 +147,9 @@ body {
 .agree label {
   margin-left: 0.5rem;
   font-size: 18px;
+}
+.already {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
 }

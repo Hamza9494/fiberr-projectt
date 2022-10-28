@@ -1,8 +1,8 @@
+// select DOM elements
 const form = document.querySelector('#form')
 const userName = document.querySelector('#username')
 const email = document.querySelector('#email')
 const password = document.querySelector('#password')
-// const passwordCheck = document.querySelector('#password-check')
 const formDone = document.querySelector('.form-sent')
 const showPass = document.querySelector('.showpass')
 const checkbox = document.querySelector('#check')
@@ -13,11 +13,11 @@ form.addEventListener('submit', (e) => {
   checkData()
 })
 
+//validate form input data
 function checkData() {
   const userData = userName.value.trim()
   const emailData = email.value.trim()
   const passData = password.value.trim()
-  // const passCheckData = passwordCheck.value.trim()
   if (userData === '') {
     setError(userName, 'user name is empty')
   } else {
@@ -37,15 +37,7 @@ function checkData() {
   } else {
     setSuccess(password)
   }
-  // if (passCheckData === '') {
-  //   setError(passwordCheck, 'password is empty')
-  //   return false
-  // } else if (passData !== passCheckData) {
-  //   setError(passwordCheck, 'passwords does not match')
-  // } else {
-  //   setSuccess(passwordCheck)
-  //   clearFrom()
-  // }
+
   if (
     userData !== '' &&
     isEmail(emailData) &&
@@ -58,7 +50,6 @@ function checkData() {
     restoreDeafault(email)
     restoreDeafault(password)
     clearFrom()
-    // restoreDeafault(passwordCheck)
   }
 }
 
@@ -84,12 +75,14 @@ function restoreDeafault(element) {
   element.parentElement.className = 'form-contorl'
 }
 
+// vadlidate email
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   )
 }
 
+// show successul form sent
 function formSent() {
   formDone.className = 'form-sent show'
   setTimeout(() => {
@@ -97,6 +90,7 @@ function formSent() {
   }, 3000)
 }
 
+// clear input fields
 function clearFrom() {
   userName.value = ''
   email.value = ''
